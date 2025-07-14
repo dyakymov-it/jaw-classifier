@@ -126,17 +126,17 @@ ratio = width / height
 		<tr>
 			<td>Вузька</td>
 			<td><img src="/examples/images/input_narrow.jpeg" /></td>
-			<td><img src="/examples/images/output_narrow.png" /></td>
+			<td><img src="/examples/images/output_narrow.jpg" /></td>
 		</tr>
 		<tr>
 			<td>Середня</td>
 			<td><img src="/examples/images/input_medium.png" /></td>
-			<td><img src="/examples/images/output_medium.png" /></td>
+			<td><img src="/examples/images/output_medium.jpg" /></td>
 		</tr>
 		<tr>
 			<td>Широка</td>
 			<td><img src="/examples/images/input_wide.webp" /></td>
-			<td><img src="/examples/images/output_wide.png" /></td>
+			<td><img src="/examples/images/output_wide.jpg" /></td>
 		</tr>
 	</tbody>
 </table>
