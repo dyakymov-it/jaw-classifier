@@ -1,0 +1,23 @@
+[project]
+name = "jaw-classifier"
+version = "0.1.0"
+description = "Jaw Classifier"
+authors = [
+    {name = "Dyakymov",email = "davidyakymovych@gmail.com"}
+]
+readme = "README.md"
+requires-python = "3.10.11"
+dependencies = [
+    "opencv-python (==4.9.0.80)",
+    "numpy (==1.26.4)",
+    "mediapipe (>=0.10.21,<0.11.0)",
+    "face-alignment (>=1.4.1,<2.0.0)",
+    "streamlit (>=1.46.1,<2.0.0)",
+    "pillow (>=11.3.0,<12.0.0)",
+    "pysnooper (>=1.2.3,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
