@@ -29,7 +29,7 @@ def analyze_image(image_path, output_path="output.jpg"):
     draw = ImageDraw.Draw(image_pil)
     dw, dh = image_pil.size
     
-    font_size = int(min(dw, dh) * 0.055)
+    font_size = int(min(dw, dh) * 0.15)
     
     try:
         font = ImageFont.truetype("arial.ttf", size=font_size)
