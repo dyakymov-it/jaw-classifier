@@ -27,8 +27,12 @@ def analyze_image(image_path, output_path="output.jpg"):
 
     image_pil = Image.open(output_path).convert("RGB")
     draw = ImageDraw.Draw(image_pil)
+    dw, dh = image_pil.size
+    
+    font_size = int(min(dw, dh) * 0.05)
+    
     try:
-        font = ImageFont.truetype("arial.ttf", size=22)
+        font = ImageFont.truetype("arial.ttf", size=font_size)
     except:
         font = ImageFont.load_default()
 

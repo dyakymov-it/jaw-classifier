@@ -37,10 +37,12 @@ def draw_landmarks_on_image(
     image = cv2.imread(image_path)
     if image is None:
         raise ValueError(f"Не вдалося завантажити зображення: {image_path}")
+    
+    h, w = image.shape[:2]
 
     if landmarks_mp is not None:
         for x, y in landmarks_mp:
-            cv2.circle(image, (int(x), int(y)), 3, (0, 255, 0), -1)
+            cv2.circle(image, (int(x), int(y)), int(min(w, h) * 0.015), (0, 255, 0), -1)
 
 
     cv2.imwrite(output_path, image)
