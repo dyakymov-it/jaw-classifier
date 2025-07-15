@@ -42,7 +42,7 @@ def draw_landmarks_on_image(
 
     if landmarks_mp is not None:
         for x, y in landmarks_mp:
-            cv2.circle(image, (int(x), int(y)), int(min(w, h) * 0.015), (0, 255, 0), -1)
+            cv2.circle(image, (int(x), int(y)), int(min(w, h) * 0.005), (0, 255, 0), -1)
 
 
     cv2.imwrite(output_path, image)

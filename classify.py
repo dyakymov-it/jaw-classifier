@@ -29,7 +29,7 @@ def analyze_image(image_path, output_path="output.jpg"):
     draw = ImageDraw.Draw(image_pil)
     dw, dh = image_pil.size
     
-    font_size = int(min(dw, dh) * 0.05)
+    font_size = int(min(dw, dh) * 0.055)
     
     try:
         font = ImageFont.truetype("arial.ttf", size=font_size)
@@ -39,7 +39,6 @@ def analyze_image(image_path, output_path="output.jpg"):
     text = f"{jaw_class.upper()} щелепа\n" f"Впевненість: {confidence:.2f}"
 
     draw.text((30, 30), text, font=font, fill=(255, 255, 0))
-    draw.text((30, 90), "MediaPipe", font=font, fill=(0, 255, 0))
     image_pil.save(output_path)
 
     return {
